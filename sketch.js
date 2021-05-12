@@ -2,8 +2,6 @@ var dog,sadDog,happyDog;
 var foodS,foodStock;
 var database;
 
-
-
 function preload(){
   sadDog=loadImage("Images/Dog.png");
   happyDog=loadImage("Images/happy dog.png");
@@ -22,11 +20,6 @@ function setup() {
   foodStock=database.ref('Food');
   foodStock.on("value",readStock);
 
-  /*feed=createButton("Feed the dog");
-  feed.position(700,95);
-  feed.mousePressed(feedDog);
-
-  */
 }
 
 function draw() {  
